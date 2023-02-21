@@ -1,27 +1,57 @@
 @import "breakpoints";
 
+$max-size-sm: 460px;
+$max-size-md: 740px;
+$max-size-lg: 100px;
+$max-size-xl: 1400px;
+
+// boxes
 .box {
     width: 100%;
+    max-width: 100%;
 }
 
-.box-sm {
-    width: 100%;
-    max-width: $small-screen;
-}
-
-.box-md {
-    width: 100%;
-    max-width: $medium-screen;
-}
-
-.box-lg {
-    width: 100%;
-    max-width: $large-screen;
-}
-
+.box-sm,
+.box-md,
+.box-lg,
 .box-xl {
     width: 100%;
-    max-width: $extra-large-screen;
+    max-width: $max-size-xl;
+    margin: auto;
+}
+
+@media (max-width: $extra-large-screen) {
+
+    .box-sm,
+    .box-md,
+    .box-lg {
+        max-width: $max-size-lg;
+    }
+}
+
+@media (max-width: $large-screen) {
+
+    .box-sm,
+    .box-md {
+        max-width: $max-size-md;
+    }
+}
+
+@media (max-width: $medium-screen) {
+
+    .box-sm {
+        max-width: $max-size-sm;
+    }
+}
+
+@media (max-width: $small-screen) {
+
+    .box-sm,
+    .box-md,
+    .box-lg,
+    .box-xl {
+        max-width: 100%;
+    }
 }
 
 .flex-row {
@@ -30,6 +60,8 @@
     flex-direction: row;
     padding: 0 1rem;
 }
+
+// sizes
 
 .size-auto {
     flex: auto;
@@ -107,55 +139,6 @@
     padding: 0 0.2rem;
     box-sizing: border-box;
 }
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-start {
-    justify-content: flex-start;
-}
-
-.justify-end {
-    justify-content: flex-end;
-}
-
-.justify-space-around {
-    justify-content: space-around;
-}
-
-.justify-space-between {
-    justify-content: space-between;
-}
-
-.justify-space-evenly {
-    justify-content: space-evenly;
-}
-
-.justify-self-center {
-    justify-self: center;
-}
-
-.justify-self-start {
-    justify-self: flex-start;
-}
-
-.justify-self-end {
-    justify-self: flex-end;
-}
-
-.justify-self-space-around {
-    justify-self: space-around;
-}
-
-.justify-self-space-between {
-    justify-self: space-between;
-}
-
-.justify-self-space-evenly {
-    justify-self: space-evenly;
-}
-
 
 @media (max-width: $extra-large-screen) {
     .size-xl-auto {
@@ -471,4 +454,54 @@
         padding: 0 0.2rem;
         box-sizing: border-box;
     }
+}
+
+// Justifiers
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.justify-self-start {
+    justify-self: flex-start;
+}
+
+.justify-self-end {
+    justify-self: flex-end;
+}
+
+.justify-self-space-around {
+    justify-self: space-around;
+}
+
+.justify-self-space-between {
+    justify-self: space-between;
+}
+
+.justify-self-space-evenly {
+    justify-self: space-evenly;
 }
