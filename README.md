@@ -16,7 +16,7 @@ Para usar o Responsify CSS em seu projeto, você pode baixar a versão mais rece
 
 ~~~ html
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rafaelduartep/responsify-css@v0.0.0-alpha/dist/responsify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rafaelduartep/responsify-css@v0.1.0-alpha/dist/responsify.min.css">
 </head>
 ~~~
 
