@@ -35,8 +35,14 @@ jobs:
       - name: Analyze project source
         run: dart analyze
 
-      # Your project will need to have tests in test/ and a dependency on
-      # package:test for this step to succeed. Note that Flutter projects will
-      # want to change this to 'flutter test'.
+      # Run compiler
       - name: Compile css
         run: dart run
+
+      - name: Commit changes
+        run: |
+              git config --local user.email "actions@github.com"
+              git config --local user.name "GitHub Actions"
+              git add dist/responsify.min.css
+              git commit -m "Compilação do css"
+
