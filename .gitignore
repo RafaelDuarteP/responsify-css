@@ -4,3 +4,9 @@
 
 # Conventional directory for build output.
 build/
+
+# VS Code files
+.vscode/
+
+# Manual tests files
+tests/
