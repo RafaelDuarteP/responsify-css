@@ -1,0 +1,393 @@
+@import 'breakpoints';
+
+// padding simples 
+.p-auto {
+    padding: auto;
+}
+
+.p-1 {
+    padding: 1vh 1vw;
+}
+
+.p-2 {
+    padding: 2vh 2vw;
+}
+
+.p-3 {
+    padding: 3vh 3vw;
+}
+
+.p-4 {
+    padding: 4vh 4vw;
+}
+
+.p-5 {
+    padding: 5vh 5vw;
+}
+
+// padding eixo x
+.p-x-auto {
+    padding: 0 auto;
+}
+
+.p-x-1 {
+    padding: 0 1vw;
+}
+
+.p-x-2 {
+    padding: 0 2vw;
+}
+
+.p-x-3 {
+    padding: 0 3vw;
+}
+
+.p-x-4 {
+    padding: 0 4vw;
+}
+
+.p-x-5 {
+    padding: 0 5vw;
+}
+
+
+// padding eixo y
+.p-y-auto {
+    padding: auto 0;
+}
+
+.p-y-1 {
+    padding: 1vh 0;
+}
+
+.p-y-2 {
+    padding: 2vh 0;
+}
+
+.p-y-3 {
+    padding: 3vh 0;
+}
+
+.p-y-4 {
+    padding: 4vh 0;
+}
+
+.p-y-5 {
+    padding: 5vh 0;
+}
+
+@media (max-width: $extra-large-screen) {
+
+    // padding simples 
+    .p-xl-auto {
+        padding: auto;
+    }
+
+    .p-xl-1 {
+        padding: 1vh 1vw;
+    }
+
+    .p-xl-2 {
+        padding: 2vh 2vw;
+    }
+
+    .p-xl-3 {
+        padding: 3vh 3vw;
+    }
+
+    .p-xl-4 {
+        padding: 4vh 4vw;
+    }
+
+    .p-xl-5 {
+        padding: 5vh 5vw;
+    }
+
+    // padding eixo x
+    .p-xl-x-auto {
+        padding: 0 auto;
+    }
+
+    .p-xl-x-1 {
+        padding: 0 1vw;
+    }
+
+    .p-xl-x-2 {
+        padding: 0 2vw;
+    }
+
+    .p-xl-x-3 {
+        padding: 0 3vw;
+    }
+
+    .p-xl-x-4 {
+        padding: 0 4vw;
+    }
+
+    .p-xl-x-5 {
+        padding: 0 5vw;
+    }
+
+
+    // padding eixo y
+    .p-xl-y-auto {
+        padding: auto 0;
+    }
+
+    .p-xl-y-1 {
+        padding: 1vh 0;
+    }
+
+    .p-xl-y-2 {
+        padding: 2vh 0;
+    }
+
+    .p-xl-y-3 {
+        padding: 3vh 0;
+    }
+
+    .p-xl-y-4 {
+        padding: 4vh 0;
+    }
+
+    .p-xl-y-5 {
+        padding: 5vh 0;
+    }
+}
+
+@media (max-width: $large-screen) {
+
+    // padding simples 
+    .p-lg-auto {
+        padding: auto;
+    }
+
+    .p-lg-1 {
+        padding: 1vh 1vw;
+    }
+
+    .p-lg-2 {
+        padding: 2vh 2vw;
+    }
+
+    .p-lg-3 {
+        padding: 3vh 3vw;
+    }
+
+    .p-lg-4 {
+        padding: 4vh 4vw;
+    }
+
+    .p-lg-5 {
+        padding: 5vh 5vw;
+    }
+
+    // padding eixo x
+    .p-lg-x-auto {
+        padding: 0 auto;
+    }
+
+    .p-lg-x-1 {
+        padding: 0 1vw;
+    }
+
+    .p-lg-x-2 {
+        padding: 0 2vw;
+    }
+
+    .p-lg-x-3 {
+        padding: 0 3vw;
+    }
+
+    .p-lg-x-4 {
+        padding: 0 4vw;
+    }
+
+    .p-lg-x-5 {
+        padding: 0 5vw;
+    }
+
+
+    // padding eixo y
+    .p-lg-y-auto {
+        padding: auto 0;
+    }
+
+    .p-lg-y-1 {
+        padding: 1vh 0;
+    }
+
+    .p-lg-y-2 {
+        padding: 2vh 0;
+    }
+
+    .p-lg-y-3 {
+        padding: 3vh 0;
+    }
+
+    .p-lg-y-4 {
+        padding: 4vh 0;
+    }
+
+    .p-lg-y-5 {
+        padding: 5vh 0;
+    }
+}
+
+@media (max-width: $medium-screen) {
+
+    // padding simples 
+    .p-md-auto {
+        padding: auto;
+    }
+
+    .p-md-1 {
+        padding: 1vh 1vw;
+    }
+
+    .p-md-2 {
+        padding: 2vh 2vw;
+    }
+
+    .p-md-3 {
+        padding: 3vh 3vw;
+    }
+
+    .p-md-4 {
+        padding: 4vh 4vw;
+    }
+
+    .p-md-5 {
+        padding: 5vh 5vw;
+    }
+
+    // padding eixo x
+    .p-md-x-auto {
+        padding: 0 auto;
+    }
+
+    .p-md-x-1 {
+        padding: 0 1vw;
+    }
+
+    .p-md-x-2 {
+        padding: 0 2vw;
+    }
+
+    .p-md-x-3 {
+        padding: 0 3vw;
+    }
+
+    .p-md-x-4 {
+        padding: 0 4vw;
+    }
+
+    .p-md-x-5 {
+        padding: 0 5vw;
+    }
+
+
+    // padding eixo y
+    .p-md-y-auto {
+        padding: auto 0;
+    }
+
+    .p-md-y-1 {
+        padding: 1vh 0;
+    }
+
+    .p-md-y-2 {
+        padding: 2vh 0;
+    }
+
+    .p-md-y-3 {
+        padding: 3vh 0;
+    }
+
+    .p-md-y-4 {
+        padding: 4vh 0;
+    }
+
+    .p-md-y-5 {
+        padding: 5vh 0;
+    }
+}
+
+@media (max-width: $small-screen) {
+
+    // padding simples 
+    .p-sm-auto {
+        padding: auto;
+    }
+
+    .p-sm-1 {
+        padding: 1vh 1vw;
+    }
+
+    .p-sm-2 {
+        padding: 2vh 2vw;
+    }
+
+    .p-sm-3 {
+        padding: 3vh 3vw;
+    }
+
+    .p-sm-4 {
+        padding: 4vh 4vw;
+    }
+
+    .p-sm-5 {
+        padding: 5vh 5vw;
+    }
+
+    // padding eixo x
+    .p-sm-x-auto {
+        padding: 0 auto;
+    }
+
+    .p-sm-x-1 {
+        padding: 0 1vw;
+    }
+
+    .p-sm-x-2 {
+        padding: 0 2vw;
+    }
+
+    .p-sm-x-3 {
+        padding: 0 3vw;
+    }
+
+    .p-sm-x-4 {
+        padding: 0 4vw;
+    }
+
+    .p-sm-x-5 {
+        padding: 0 5vw;
+    }
+
+
+    // padding eixo y
+    .p-sm-y-auto {
+        padding: auto 0;
+    }
+
+    .p-sm-y-1 {
+        padding: 1vh 0;
+    }
+
+    .p-sm-y-2 {
+        padding: 2vh 0;
+    }
+
+    .p-sm-y-3 {
+        padding: 3vh 0;
+    }
+
+    .p-sm-y-4 {
+        padding: 4vh 0;
+    }
+
+    .p-sm-y-5 {
+        padding: 5vh 0;
+    }
+}
