@@ -30,6 +30,7 @@ jobs:
         run: dart run
 
       - name: Check for changes
+        if: success()
         id: check_changes
         run: |
           if git diff --cached --exit-code --quiet; then
