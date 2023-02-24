@@ -7,7 +7,6 @@ O Responsify CSS é um framework CSS leve e flexível que ajuda você a criar la
 * Sistema de grid responsivo baseado em CSS Grid e Flexbox
 * Opções de layout flexíveis e personalizáveis
 * Marcação HTML mínima e semântica
-* Código CSS consistente e bem organizado
 * Fácil de aprender e usar, mesmo para iniciantes
 
 ## Começando
