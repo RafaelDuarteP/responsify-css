@@ -11,31 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: dart-lang/setup-dart@v1
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
 
       - name: Install dependencies
         run: dart pub get
 
+      # Consider passing '--fatal-infos' for slightly stricter analysis.
       - name: Analyze project source
         run: dart analyze
 
+      # Run compiler
       - name: Compile css
-        if: '!contains(github.event.head_commit.modified, "documentation/")'
         run: dart run
 
       - name: Commit changes
-        if: '!contains(github.event.head_commit.modified, "documentation/")'
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add .
-          git commit -m "Compilação do css"
+              git config --local user.email "actions@github.com"
+              git config --local user.name "GitHub Actions"
+              git add .
+              git commit -m "Compilação do css"
 
       - name: Push changes
-        if: '!contains(github.event.head_commit.modified, "documentation/")'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref }}
+          branch: main
