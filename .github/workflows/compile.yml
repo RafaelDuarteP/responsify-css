@@ -1,9 +1,7 @@
-name: Dart
+name: Compile
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main" ]
 
 jobs:
@@ -25,12 +23,6 @@ jobs:
 
       - name: Run tests
         run: dart test
-
-      - name: Checkout and pull
-        run: |
-          git checkout ${{ github.head_ref }}
-          git pull origin ${{ github.head_ref }}
-        shell: bash
 
       - name: Compile css
         run: dart run
@@ -61,4 +53,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref }}
+          branch: main
