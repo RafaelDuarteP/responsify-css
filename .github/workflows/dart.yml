@@ -35,10 +35,10 @@ jobs:
         run: |
           if git diff --exit-code --quiet; then
             echo "No changes to commit."
-            echo "has_changes=false" >> $GITHUB_ENV
+            echo "::set-output name=has_changes::false"
           else
             echo "Changes found. Committing..."
-            echo "has_changes=true" >> $GITHUB_ENV
+            echo "::set-output name=has_changes::true"
           fi
         shell: bash
 
