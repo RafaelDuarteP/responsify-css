@@ -28,8 +28,9 @@ jobs:
 
       - name: Checkout and pull
         run: |
+          git pull origin ${{ github.head_ref }}
           git checkout
-          git pull
+        shell: bash
 
       - name: Compile css
         run: dart run
