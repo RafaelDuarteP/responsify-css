@@ -26,6 +26,11 @@ jobs:
       - name: Run tests
         run: dart test
 
+      - name: Checkout and pull
+        run: |
+          git checkout
+          git pull
+
       - name: Compile css
         run: dart run
 
