@@ -1,8 +1,11 @@
 $primary: #00fff2;
+$secondary: #5c5c5c;
 $success: #20ff2c;
 $danger: #f00;
 $alert: #e5ff00;
 $link: #285aff;
+$black: #000;
+$white: #fff;
 
 .c-primary {
     color: $primary;
@@ -24,6 +27,18 @@ $link: #285aff;
     color: $link;
 }
 
+.c-secondary {
+    color: $secondary;
+}
+
+.c-black {
+    color: $black;
+}
+
+.c-white {
+    color: $white;
+}
+
 .bg-primary {
     background-color: $primary;
 }
@@ -42,4 +57,16 @@ $link: #285aff;
 
 .bg-link {
     background-color: $link;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-white {
+    background-color: $white;
 }
