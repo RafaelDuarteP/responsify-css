@@ -28,7 +28,7 @@ jobs:
 
       - name: Check for changes
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
+          if git diff --cached --exit-code --quiet; then
             echo "No changes to commit."
             exit 0
           else
@@ -36,6 +36,7 @@ jobs:
           fi
 
       - name: Commit changes
+        if: success()
         run: |
               git config --local user.email "actions@github.com"
               git config --local user.name "GitHub Actions"
@@ -43,6 +44,7 @@ jobs:
               git commit -m "Compilação do css"
 
       - name: Push changes
+        if: success()
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
