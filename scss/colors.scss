@@ -1,0 +1,45 @@
+$primary: #00fff2;
+$success: #20ff2c;
+$danger: #f00;
+$alert: #e5ff00;
+$link: #003cff;
+
+.c-primary {
+    color: $primary;
+}
+
+.c-success {
+    color: $success;
+}
+
+.c-danger {
+    color: $danger;
+}
+
+.c-alert {
+    color: $alert;
+}
+
+.c-link {
+    color: $link;
+}
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-success {
+    background-color: $success;
+}
+
+.bg-danger {
+    background-color: $danger;
+}
+
+.bg-alert {
+    background-color: $alert;
+}
+
+.bg-link {
+    background-color: $link;
+}
