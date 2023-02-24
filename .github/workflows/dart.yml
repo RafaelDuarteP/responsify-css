@@ -11,40 +11,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - uses: dart-lang/setup-dart@v1
+        with:
+          dart-sdk: stable
 
       - name: Install dependencies
         run: dart pub get
 
-      # Consider passing '--fatal-infos' for slightly stricter analysis.
       - name: Analyze project source
         run: dart analyze
 
-      # Run compiler
       - name: Compile css
         run: dart run
 
       - name: Check for changes
+        id: check_changes
         run: |
           if git diff --cached --exit-code --quiet; then
             echo "No changes to commit."
-            exit 1
+            echo "::set-output name=has_changes::false"
           else
             echo "Changes found. Committing..."
+            echo "::set-output name=has_changes::true"
           fi
+        shell: bash
 
       - name: Commit changes
-        if: success()
+        if: ${{ success() && steps.check_changes.outputs.has_changes == 'true' }}
         run: |
-              git config --local user.email "actions@github.com"
-              git config --local user.name "GitHub Actions"
-              git add .
-              git commit -m "Compilação do css"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Compilação do css"
 
       - name: Push changes
-        if: success()
+        if: ${{ success() && steps.check_changes.outputs.has_changes == 'true' }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
