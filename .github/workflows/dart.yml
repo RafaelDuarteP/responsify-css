@@ -28,8 +28,8 @@ jobs:
 
       - name: Checkout and pull
         run: |
+          git checkout ${{ github.head_ref }}
           git pull origin ${{ github.head_ref }}
-          git checkout
         shell: bash
 
       - name: Compile css
