@@ -28,7 +28,7 @@ jobs:
 
       - name: Check for changes
         run: |
-          if [[ -z "$(git diff-index HEAD)" ]]; then
+          if [ -n "$(git status --porcelain)" ]; then
             echo "No changes to commit."
             exit 0
           else
