@@ -26,7 +26,7 @@ jobs:
       - name: Compile css
         run: dart run
 
-       - name: Check for changes
+      - name: Check for changes
         run: |
           if [[ -z "$(git diff-index HEAD)" ]]; then
             echo "No changes to commit."
