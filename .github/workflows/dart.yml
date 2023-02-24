@@ -33,7 +33,7 @@ jobs:
         if: success()
         id: check_changes
         run: |
-          if git diff --cached --exit-code --quiet; then
+          if [ -n "$(git status --porcelain)" ]; then
             echo "No changes to commit."
             echo "{has_changes}={false}" >> $GITHUB_OUTPUT
           else
