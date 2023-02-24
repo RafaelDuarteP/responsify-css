@@ -22,7 +22,7 @@ Para usar o Responsify CSS em seu projeto, você pode baixar a versão mais rece
 
 ## Documentação
 
-Para obter informações detalhadas sobre como usar o Responsify CSS, incluindo exemplos, diretrizes e melhores práticas, consulte a [documentação oficial](/documentation/).
+Para obter informações detalhadas sobre como usar o Responsify CSS, incluindo exemplos, diretrizes e melhores práticas, consulte a [documentação](/documentation/).
 
 ## Contribuição
 
