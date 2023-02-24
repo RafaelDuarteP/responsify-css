@@ -30,7 +30,7 @@ jobs:
         run: |
           if git diff --cached --exit-code --quiet; then
             echo "No changes to commit."
-            exit 0
+            exit 1
           else
             echo "Changes found. Committing..."
           fi
