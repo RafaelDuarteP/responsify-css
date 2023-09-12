@@ -1,6 +1,11 @@
+<p align="center">
+    <img align="center" alt="logo" height="250" src="./azul%20tipografia.png">
+</p>
+
 # Responsify CSS
 
 O Responsify CSS é um framework CSS leve e flexível que ajuda você a criar layouts web responsivos usando grid e flexbox. Com uma sintaxe simples e intuitiva, o Responsify CSS permite que você crie interfaces dinâmicas e adaptáveis que funcionam perfeitamente em dispositivos e navegadores diferentes.
+
 
 ## Recursos
 
