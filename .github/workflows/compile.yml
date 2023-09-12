@@ -40,6 +40,9 @@ jobs:
       - name: Compile css
         run: dart run
 
+      - name: Verify changes
+        run: git status
+
       - name: Check for changes
         if: success()
         id: check_changes
